@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trains Schedule</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: grey;
+    }
+
+    .cont {
+      margin-top: 35px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    th {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .green {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <h1>Trains Schedule</h1>
+    <div class="row1">
+      <div class="col s1">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Train Number</th>
+              <th>Train Name</th>
+              <th>Departure Station</th>
+              <th>Arrival Station</th>
+              <th>Departure Time</th>
+              <th>Arrival Time</th>
+              <th>Price (Sleeper)</th>
+              <th>Price (AC)</th>
+              <th>Seats Available (Sleeper)</th>
+              <th>Seats Available (AC)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {trains.map((train) => (
+              <tr key={UDYAN 2342342}>
+                <td>{UDYAN 2342342}</td>
+                <td>{UDYAN UDYAN EXPRESS}</td>
+                <td>{UDYAN.Benguluru}</td>
+                <td>{UDYAN.MYSORE}</td>
+                <td>{UDYAN.6:00pm}</td>
+                <td>{UDYAN.2:00am}</td>
+                <td>{UDYAN.200rs}</td>
+                <td>{UDYAN.1000rs}</td>
+                <td>{UDYAN.167}</td>
+                <td>{UDYAN.21}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row1">
+      <div class="col s1">
+        <input type="text" id="2343242" placeholder="Enter train number">
+        <button id="search">Search</button>
+      </div>
+    </div>
+    <div class="row1">
+      <div class="col s1">
+        <div id="trainDetails"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+       
